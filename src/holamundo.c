@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "operaciones.h"
 
 int main(void) {
 	puts("!!!Hola Mundo!!!"); /* prints !!!Hello World!!! */

@@ -62,6 +62,10 @@ extern int32_t funcion(uint8_t a, uint32_t b)
 extern int16_t sumaint16 (int16_t numA, int16_t numB){
 	return numA + numB;
 }
+
+extern int16_t restaint16 (int16_t numA, int16_t numB){
+	return numA - numB;
+}
 /** @} doxygen end group definition */
 /** @} doxygen end group definition */
 /*==================[end of file]============================================*/

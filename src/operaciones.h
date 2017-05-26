@@ -43,7 +43,7 @@
  ** @{ */
 
 /*==================[inclusions]=============================================*/
-
+#include <stdint.h>
 /*==================[cplusplus]==============================================*/
 #ifdef __cplusplus
 extern "C" {
@@ -69,13 +69,14 @@ extern "C" {
 extern int32_t funcion(uint8_t a, uint32_t b);
 
 /**
- * Suma 2 numeros de 16 bit (con signo)
+ * \Suma 2 numeros de 16 bit (con signo)
  * \param[in]    sumando A
  * \param[in]    sumando B
  * \return resultado de la suma A + B
  */
 extern int16_t sumaint16 (int16_t numA, int16_t numB);
 
+extern int16_t restaint16 (int16_t numA, int16_t numB);
 /*==================[cplusplus]==============================================*/
 #ifdef __cplusplus
 }
