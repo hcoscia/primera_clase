@@ -60,11 +60,26 @@ extern int32_t funcion(uint8_t a, uint32_t b)
 }
 
 extern int16_t sumaint16 (int16_t numA, int16_t numB){
-	return numA + numB;
+	int32_t suma;
+	suma = (int32_t) numA + (int32_t) numB;
+	if (suma > INT16_MAX)
+		return INT16_MAX;
+	else if (suma < INT16_MIN)
+		return INT16_MIN;
+	else
+		return (int16_t) suma;
+
 }
 
 extern int16_t restaint16 (int16_t numA, int16_t numB){
-	return numA - numB;
+	int32_t resta;
+	resta = (int32_t) numA + (int32_t) numB;
+	if (resta > INT16_MAX)
+		return INT16_MAX;
+	else if (resta < INT16_MIN)
+		return INT16_MIN;
+	else
+		return (int16_t) resta;
 }
 /** @} doxygen end group definition */
 /** @} doxygen end group definition */
